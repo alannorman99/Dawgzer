@@ -1,0 +1,20 @@
+.title {
+	text-align: center;
+}
+
+.dawger-form, .loading {
+	width: 50%; 
+	margin: 0 auto;
+}
+ .loading {
+	 text-align: center;
+ }
+
+ body {
+	 background-color: lightslategray;
+ }
+
+ .dawgers {
+	 width: 80%;
+	 margin: 0 auto;
+ }
