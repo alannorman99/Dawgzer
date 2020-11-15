@@ -5,6 +5,7 @@ const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 //element for adding new dawgers to main page
 const dawgersElement = document.querySelector('.dawgers');
+
 //url for any request to the db collection
 const API_URL = 'http://localhost:5000/dawgers';
 
@@ -67,6 +68,7 @@ function listAllDawgers() {
 			dawgers.forEach(dawger => {
 				//div setup
 				const div = document.createElement('div');
+				div.className = 'innerDawgers';
 
 				//header setup
 				const header = document.createElement('h3');
@@ -84,6 +86,11 @@ function listAllDawgers() {
 				div.appendChild(date);
 
 				dawgersElement.appendChild(div);
+
+				//add event listener to each div that gets created
+				div.addEventListener("click", () => {
+					console.log("It works! " + "\n" + "This tweet is from: " + dawger.name + "\n" + " It says: " + dawger.content + "\n" + " It was posted on: " + dawger.created);
+				})
 
 			});
 			loadingElement.style.display = 'none';

@@ -1,6 +1,46 @@
 .title {
 	text-align: center;
 }
+
+.header {
+	text-align: right;
+}
+
+.buttonlogin {
+	color: white;
+	border: black;
+	box-shadow: #1F5357;
+	background-color: #64BD97;
+	position: absolute;
+    top: 10px;
+	right: 10px;
+}
+
+.sidebar {
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #C2FFBB;
+	overflow-x: hidden;
+	padding-top: 16px;
+  }
+  
+  .sidebar ul {
+	list-style-type: none;
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+  }
+  
+  .sidebar ul:hover {
+	color: #1F5357;
+  }
+  
 .dawger-form {
 	width: 50%; 
 	margin: 0 auto;
@@ -18,7 +58,7 @@
  }
 
  body {
-	 background-color: #65E892;
+	 background-color: #477D7F;
  }
 
  .dawgers {
@@ -27,9 +67,12 @@
  }
 
  .dawgers > div {
-	 background-color: #3994D6;
+	 background-color: #1F5357;
 	 padding: 12px;
 	 border-radius: 4px;
+ }
+ .dawgers > div:hover {
+	 opacity: .65;
  }
 
  .dawgers > div > h3 {
