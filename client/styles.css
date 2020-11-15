@@ -2,6 +2,12 @@
 	text-align: center;
 }
 
+li {
+	font-size: 75px;
+	text-align: center;
+	right: 30px;
+}
+
 .header {
 	text-align: right;
 }
@@ -39,6 +45,7 @@
   
   .sidebar ul:hover {
 	color: #1F5357;
+	opacity: .50;
   }
   
 .dawger-form {
@@ -72,7 +79,8 @@
 	 border-radius: 4px;
  }
  .dawgers > div:hover {
-	 opacity: .65;
+	 background-color: #64BD97;
+	 opacity: .50;
  }
 
  .dawgers > div > h3 {
