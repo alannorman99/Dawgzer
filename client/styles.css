@@ -1,20 +1,47 @@
 .title {
 	text-align: center;
 }
-
-.dawger-form, .loading {
+.dawger-form {
 	width: 50%; 
 	margin: 0 auto;
+	text-align: center;
 }
+
+.dawger-form > label {
+	text-align: left;
+}
+
  .loading {
 	 text-align: center;
+	 width: 50%; 
+	margin: 0 auto;
  }
 
  body {
-	 background-color: lightslategray;
+	 background-color: #65E892;
  }
 
  .dawgers {
 	 width: 80%;
-	 margin: 0 auto;
+	 margin: 0 auto; 
  }
+
+ .dawgers > div {
+	 background-color: #3994D6;
+	 padding: 12px;
+	 border-radius: 4px;
+ }
+
+ .dawgers > div > h3 {
+	 word-wrap: break-word;
+ }
+
+ .dawgers > div > p {
+	 word-wrap: break-word;
+ }
+
+ .dawgers > div:not(:last-child) {
+	 margin-bottom: 8px;
+ }
+
+ 

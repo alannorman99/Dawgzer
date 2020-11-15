@@ -45,7 +45,7 @@ form.addEventListener('submit', (event) => {
 				form.style.display = '';
 			}, 30000);
 			listAllDawgers();
-			loadingElement.style.display = 'none';
+
 
 		});
 
@@ -67,6 +67,7 @@ function listAllDawgers() {
 			dawgers.forEach(dawger => {
 				//div setup
 				const div = document.createElement('div');
+
 				//header setup
 				const header = document.createElement('h3');
 				header.textContent = dawger.name;
@@ -85,5 +86,6 @@ function listAllDawgers() {
 				dawgersElement.appendChild(div);
 
 			});
+			loadingElement.style.display = 'none';
 		});
 }

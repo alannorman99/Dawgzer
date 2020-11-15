@@ -12,6 +12,9 @@ Objectives
  🚀 Deploy the database with mlab
  🚀 Deploy the server with now.sh
 
+
+Phase 1:
+
 Front-end
 [x] Create client folder
 [x] Setup index.html
@@ -104,6 +107,11 @@ now -e MONGO_URI=@meower-db
 [] Add alias
 [] Deploy client folder with now
 [] Set API_URL based on hostname
+
+
+Phase 2:
+
+
 
 What's next?
 Add comments/replies to a mew
