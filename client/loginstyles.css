@@ -1,0 +1,25 @@
+.header {
+text-align: center;
+}
+
+body {
+	background-color: #477D7F;
+}
+
+.create-account {
+	color: white;
+	border-color: black;
+	background-color: #64BD97;
+	margin-left: 10%;
+	text-align: right;
+}
+
+.login-form {
+	width: 50%; 
+	margin: 0 auto;
+	text-align: left;
+}
+
+.login-form > label {
+text-align: left;
+}

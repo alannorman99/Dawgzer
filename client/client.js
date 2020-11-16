@@ -1,10 +1,12 @@
 
 //reference to the form
-const form = document.querySelector('form');
+const form = document.querySelector('.dawger-form');
 //refernce to loading image div
 const loadingElement = document.querySelector('.loading');
 //element for adding new dawgers to main page
 const dawgersElement = document.querySelector('.dawgers');
+
+const loginButton = document.querySelector('.buttonlogin');
 
 //url for any request to the db collection
 const API_URL = 'http://localhost:5000/dawgers';
@@ -51,6 +53,34 @@ form.addEventListener('submit', (event) => {
 		});
 
 });
+
+
+
+loginButton.addEventListener('click', () => {
+	console.log("Log in clicked");
+	var loginWindow = window.open("login.html", "", "toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
+
+	loginWindow.onload = function () {
+
+		const loginForm = loginWindow.document.querySelector(".login-form");
+
+		loginForm.addEventListener('submit', (event) => {
+			event.preventDefault();
+			const loginData = new FormData(loginForm);
+			const username = loginData.get('username');
+			const password = loginData.get('password');
+
+			const user = {
+				username,
+				password
+			}
+
+			console.log(user);
+		})
+
+	};
+});
+
 
 //displays all the tweets(dawgers) from the collection on the main page
 function listAllDawgers() {
